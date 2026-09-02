@@ -8,3 +8,4 @@ Needs the .NET 8 SDK or newer.
 - Run the tests: `dotnet run -- test`
 
 ## Features
+- Subtotal of a cart
