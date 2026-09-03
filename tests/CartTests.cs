@@ -11,4 +11,11 @@ public static class CartTests
     [Test]
     public static void SubtotalIsSumOfPriceTimesQty() =>
         Check.Equal(14.00m, Cart.Subtotal(CartItems));
+
+    [Test]
+    public static void DiscountIsAPercentage()
+    {
+        Check.Equal(80.00m, Cart.ApplyDiscount(100m, 20m));
+        Check.Equal(14.00m, Cart.ApplyDiscount(14m, 0m));
+    }
 }

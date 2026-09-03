@@ -9,3 +9,4 @@ Needs the .NET 8 SDK or newer.
 
 ## Features
 - Subtotal of a cart
+- Percentage discounts
