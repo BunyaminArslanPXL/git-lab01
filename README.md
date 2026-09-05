@@ -11,3 +11,4 @@ Needs the .NET 8 SDK or newer.
 - Subtotal of a cart
 - Percentage discounts
 - Free shipping from 50 euro
+- Total price (incl. shipping)

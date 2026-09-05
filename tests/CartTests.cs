@@ -25,4 +25,11 @@ public static class CartTests
         Check.Equal(4.95m, Cart.Shipping(20m));
         Check.Equal(0m, Cart.Shipping(60m));
     }
+
+    [Test]
+    public static void TotalIncludesDiscountAndShipping()
+    {
+        Check.Equal(18.95m, Cart.Total(CartItems));
+        Check.Equal(11.95m, Cart.Total(CartItems, discount: 50m));
+    }
 }

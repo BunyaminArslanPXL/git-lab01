@@ -19,4 +19,11 @@ public static class Cart
             return 0m;
         return 4.95m;
     }
+
+    /// <summary>Subtotal minus discount, plus shipping.</summary>
+    public static decimal Total(IEnumerable<Item> items, decimal discount = 0)
+    {
+        var amount = ApplyDiscount(Subtotal(items), discount);
+        return Math.Round(amount + Shipping(amount), 2);
+    }
 }
