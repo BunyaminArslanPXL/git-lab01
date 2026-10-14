@@ -1,5 +1,5 @@
 namespace MiniShop;
-
+/// <summary>Search helpers for Mini Shop.</summary>
 public static class Search
 {
     /// <summary>All items whose name contains the query (case-insensitive).</summary>
